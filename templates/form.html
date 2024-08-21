@@ -1,0 +1,10 @@
+<form method="POST">{% csrf_token %}
+    <label for="name">Enter Title</label>
+    <input type="text" name="name" id="name" placeholder="entername" required>
+    <label for="des">Enter Description</label>
+    <input type="text" name="des" id="des" placeholder="enterdescription" required>
+    <button type="submit">update</button>
+</form>
+<hr>
+<h2>{{ res.title }}</h2>
+<h2>{{ res.description }}</h2>
